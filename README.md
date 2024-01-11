@@ -26,17 +26,21 @@ CollaborLearn strives to touch a diverse range of domains and encompass a broad 
 
 Follow these simple steps to install CollaborLearn on your own server:
 
-1. **Prerequisites:** Ensure you have Node.js, MongoDB, and npm installed on your machine.
+1. **Prerequisites:** Ensure you have Node.js, MongoDB, and yarn installed on your machine if you're not using docker.
 
-2. **Clone the Project:** `git clone https://github.com/your-username/CollaborLearn.git`
+2. **Fork the Project:** Fork the projet
 
-3. **Install Dependencies:** `cd CollaborLearn && npm install`
+   2.1 **Clone the Project:** Clone the project from your repository
 
-4. **Configuration:** Configure settings in the `config.js` file based on your environment.
+3. **Install Dependencies:** `cd openedu && yarn install`
 
-5. **Start the Server:** `npm start`
+4. **Start the Server**
 
-6. **Access the Application:** Open your browser and go to `http://localhost:3000`
+   4.1 **Build the docker image:** `docker build -t nextjs-docker .`
+
+   4.2 **Run the container:** `docker run -p 3000:3000 nextjs-docker`
+
+5. **Access the Application:** Open your browser and go to `http://localhost:3000`
 
 ## How do I use it?
 
@@ -52,6 +56,6 @@ Follow these simple steps to install CollaborLearn on your own server:
 
 If you have questions, issues, or would like to contribute to the project, please refer to our [documentation](docs/) or open an [issue](https://github.com/your-username/CollaborLearn/issues).
 
---- 
+---
 
 Feel free to further customize this README to suit the specifics of your project.
