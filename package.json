@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "run": "next start",
     "build": "next build"
   },
   "dependencies": {
