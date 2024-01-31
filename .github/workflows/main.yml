@@ -49,4 +49,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: valentinmontagne/nginx-web-example:latest
+          tags: Skilldron/openedu:latest
