@@ -33,7 +33,7 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: web
-          path: ./dist
+          path: ./.next
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
